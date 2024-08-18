@@ -92,7 +92,7 @@ We already have a public [anvil node](https://hub.docker.com/r/ritualnetwork/inf
 corresponding infernet sdk contracts deployed, along with a node that has
 registered itself to listen to on-chain subscription events.
 
-* Registry Address: `0x663F3ad617193148711d28f5334eE4Ed07016602`
+* Registry Address: `0x3B1554f346DFe5c482Bb4BA31b880c1C18412170`
 * Node Address: `0x70997970C51812dc3A010C7d01b50e0d17dc79C8` (This is the second account in the anvil's accounts.)
 
 ### Deploying Infernet Node & Infernet's Anvil Testnet

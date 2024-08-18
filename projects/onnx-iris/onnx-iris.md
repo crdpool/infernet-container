@@ -206,7 +206,7 @@ eth_blockNumber
 ```
 
 beautiful, we can see that a new contract has been created
-at `0x663F3ad617193148711d28f5334eE4Ed07016602`. That's the address of
+at `0x3B1554f346DFe5c482Bb4BA31b880c1C18412170`. That's the address of
 the `IrisClassifier` contract. We are now going to call this contract. To do so,
 we are using
 the [CallContract.s.sol](contracts/script/CallContract.s.sol)

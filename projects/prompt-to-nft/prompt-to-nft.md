@@ -262,7 +262,7 @@ Notice that in [one of the steps above](#check-the-running-containers) we have a
 
 By default, the [`anvil-node`](https://hub.docker.com/r/ritualnetwork/infernet-anvil) image used deploys the
 [Infernet SDK](https://docs.ritual.net/infernet/sdk/introduction) and other relevant contracts for you:
-- Registry: `0x663F3ad617193148711d28f5334eE4Ed07016602`
+- Registry: `0x3B1554f346DFe5c482Bb4BA31b880c1C18412170`
 - Primary node: `0x70997970C51812dc3A010C7d01b50e0d17dc79C8`
 
 ### Deploy our NFT Consumer contract

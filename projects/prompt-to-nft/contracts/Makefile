@@ -2,8 +2,8 @@
 .phony: deploy
 
 # anvil's third default address
-sender := 0x5de4111afa1a4b94908f83103eb1f1706367c2e68ca870fc3fb9a804cdab365a
-RPC_URL := http://localhost:8545
+sender := 0x3b70aa04c3ec44a88ef29d0f45f2aa065ef2da2137e80d24c81610d2bca0a923
+RPC_URL := https://mainnet.base.org/
 
 # deploying the contract
 deploy:

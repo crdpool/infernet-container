@@ -7,17 +7,19 @@ import {CallbackConsumer} from "infernet-sdk/consumer/Callback.sol";
 contract SaysGM is CallbackConsumer {
     constructor(address registry) CallbackConsumer(registry) {}
 
-    function sayGM() public {
+    function sayGM(string memory containerId, uint16 redundancy) public {
         _requestCompute(
-            "hello-world",
+            containerId,
             bytes("Good morning!"),
-            1, // redundancy
+            redundancy, // redundancy
             address(0), // paymentToken
             0, // paymentAmount
             address(0), // wallet
             address(0) // prover
         );
     }
+
+    event GM(string sth);
 
     function _receiveCompute(
         uint32 subscriptionId,
@@ -30,6 +32,8 @@ contract SaysGM is CallbackConsumer {
         bytes32 containerId,
         uint256 index
     ) internal override {
+        emit GM("Good morning!");
+
         console2.log("\n\n"
         "_____  _____ _______ _    _         _\n"
         "|  __ \\|_   _|__   __| |  | |  /\\   | |\n"

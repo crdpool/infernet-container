@@ -10,16 +10,16 @@
   "chain": {
     "enabled": true,
     "trail_head_blocks": 3,
-    "rpc_url": "http://host.docker.internal:8545",
+    "rpc_url": "https://mainnet.base.org/",
     "registry_address": "0x3B1554f346DFe5c482Bb4BA31b880c1C18412170",
     "wallet": {
       "max_gas_limit": 4000000,
-      "private_key": "0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d",
+      "private_key": "0x3b70aa04c3ec44a88ef29d0f45f2aa065ef2da2137e80d24c81610d2bca0a923",
       "allowed_sim_errors": []
     },
     "snapshot_sync": {
       "sleep": 3,
-      "batch_size": 100
+      "batch_size": 300
     }
   },
   "startup_wait": 1.0,

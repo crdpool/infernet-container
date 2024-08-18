@@ -128,7 +128,7 @@ contract Deploy is Script {
         address deployerAddress = vm.addr(deployerPrivateKey);
         console2.log("Loaded deployer: ", deployerAddress);
 
-        address registry = 0x663F3ad617193148711d28f5334eE4Ed07016602;
+        address registry = 0x3B1554f346DFe5c482Bb4BA31b880c1C18412170;
         // Create consumer
         SaysGM saysGm = new SaysGM(registry);
         console2.log("Deployed SaysHello: ", address(saysGm));
@@ -200,9 +200,9 @@ to do that.
 After deploying an Infernet Node locally, we'll need to run the `Deploy` script.
 
 ```bash
-PRIVATE_KEY=0x5de4111afa1a4b94908f83103eb1f1706367c2e68ca870fc3fb9a804cdab365a \
+PRIVATE_KEY=0x3b70aa04c3ec44a88ef29d0f45f2aa065ef2da2137e80d24c81610d2bca0a923 \
   forge script script/Deploy.s.sol:Deploy --broadcast \
-  --rpc-url http://localhost:8545
+  --rpc-url https://mainnet.base.org/
 ```
 
 The private key here is anvil's anvil's third default address which contains 10000 ETH.
@@ -212,9 +212,9 @@ The private key here is anvil's anvil's third default address which contains 100
 Similarly, to run our `CallContract.s.sol` script, we'll invoke it with `forge script`:
 
 ```bash
-PRIVATE_KEY=0x5de4111afa1a4b94908f83103eb1f1706367c2e68ca870fc3fb9a804cdab365a \
+PRIVATE_KEY=0x3b70aa04c3ec44a88ef29d0f45f2aa065ef2da2137e80d24c81610d2bca0a923 \
   forge script script/CallContract.s.sol:Deploy --broadcast \
-  --rpc-url http://localhost:8545
+  --rpc-url https://mainnet.base.org/
 ```
 
 ### Using a `Makefile`
