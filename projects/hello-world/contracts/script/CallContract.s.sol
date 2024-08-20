@@ -10,12 +10,9 @@ contract CallContract is Script {
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         vm.startBroadcast(deployerPrivateKey);
 
-        SaysGM saysGm = SaysGM(0x07947e7b378fE512d0F8CB0Bb4D5F80468496f60); 
+        SaysGM saysGm = SaysGM(0x13D69Cf7d6CE4218F646B759Dcf334D82c023d8e);
 
-        string memory containerId = "hello-world";
-        uint16 redundancy = 1000;
-
-        saysGm.sayGM(containerId, redundancy);
+        saysGm.sayGM();
 
         vm.stopBroadcast();
     }
