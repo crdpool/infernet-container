@@ -1,3 +1,0 @@
-forge-std/=lib/forge-std/src
-infernet-sdk/=lib/infernet-sdk/src
-solmate/=lib/solmate/src
