@@ -19,7 +19,7 @@
         },
         "snapshot_sync": {
             "sleep": 1,
- "starting_sub_id": 100000,            "batch_size": 150
+ "starting_sub_id": 100000,            "batch_size": 100
         }
     },
     "startup_wait": 1.0,
