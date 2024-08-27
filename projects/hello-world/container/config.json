@@ -18,8 +18,8 @@
             "allowed_sim_errors": []
         },
         "snapshot_sync": {
-            "sleep": 2,
- "starting_sub_id": 100000,            "batch_size": 10000
+            "sleep": 1,
+ "starting_sub_id": 100000,            "batch_size": 100
         }
     },
     "startup_wait": 1.0,
